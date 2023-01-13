@@ -21,6 +21,7 @@ Whenever a client makes a request to the API-Gateway, We have defined some route
 Also we can add Auth or Middlewares so that no one can call the services directly or without Authentication. We have implemented a very basic architecture.
 
 Order Server.js
+
 const express = require("express");
 const app = express();
 
@@ -52,6 +53,7 @@ app.listen(port, ()=>{
 
 
 Payment server.js
+
 const express = require("express");
 const app = express();
 
@@ -84,6 +86,7 @@ app.listen(port, ()=>{
 
 
 API-Gateway
+
 const gateway = require("fast-gateway");
 
 const port = 9001;
