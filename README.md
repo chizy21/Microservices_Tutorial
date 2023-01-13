@@ -16,9 +16,9 @@ NodeJS_Microservices
 
 ------> server.js (Running on Port 9091)
     
-    🙂 Whenever a client makes a request to the API-Gateway, We have defined some routes (Using prefixes) that redirect the request to the appropriate service (Depends which route is called). Payment and Order services are independent means If one fails other will not be affected.
+Whenever a client makes a request to the API-Gateway, We have defined some routes (Using prefixes) that redirect the request to the appropriate service (Depends which route is called). Payment and Order services are independent means If one fails other will not be affected.
 
-🔥 Also we can add Auth or Middlewares so that no one can call the services directly or without Authentication. We have implemented a very basic architecture.
+Also we can add Auth or Middlewares so that no one can call the services directly or without Authentication. We have implemented a very basic architecture.
 
 Order Server.js
 const express = require("express");
